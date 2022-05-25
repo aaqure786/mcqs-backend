@@ -1,0 +1,27 @@
+{
+  "name": "mcqs-backend",
+  "version": "1.0.0",
+  "description": "mcqs-backend. This mcqs api which is useful for prepartion of all types of test ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aaqure786/mcqs-backend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aaqure786/mcqs-backend/issues"
+  },
+  "homepage": "https://github.com/aaqure786/mcqs-backend#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "mongoose": "^6.3.4"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}
