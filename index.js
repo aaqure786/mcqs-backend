@@ -6,9 +6,8 @@ connectToMongose();
 const app = express()
 const port = 3000
 
-app.get('/', (req, res) => {
-  res.send('Hello Abrar Ahmad')
-})
+app.use('/api/auth',require('./routes/auth'))
+app.use('/api/mcqs',require('./routes/mcqs'))
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
