@@ -19,6 +19,7 @@
   "homepage": "https://github.com/aaqure786/mcqs-backend#readme",
   "dependencies": {
     "express": "^4.18.1",
+    "express-validator": "^6.14.1",
     "mongoose": "^6.3.4"
   },
   "devDependencies": {

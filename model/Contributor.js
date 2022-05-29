@@ -1,23 +1,27 @@
-import mongoose from 'mongoose';
+const mongoose = require('mongoose');
 const { Schema } = mongoose;
 
 const ContributorSchema = new Schema({
-    Name : {
+    name: {
+        type: String,
+        required: true,
+    },
+    email: {
+        type: String,
+        unique: true,
+    },
+    password: {
         type: String,
         required: true,
         unique: true,
     },
-    emai: {
+    usertag: {
         type: String,
         required: true,
-        unique: true,
-    },
-    password:  {
-        type: String,
-        required: true,
-        unique: true,
-    },
-    usertag: String
-  });
+    }
+});
 
-  module.exports = mongoose.model('contributor',ContributorSchema);
+const Contributor = mongoose.model('contributor', ContributorSchema);
+Contributor.createIndexes();
+module.exports = Contributor
+

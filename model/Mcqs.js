@@ -1,8 +1,8 @@
-import mongoose from 'mongoose';
+const mongoose =  require('mongoose');
 const { Schema } = mongoose;
 
 const McqsSchema = new Schema({
-    question : {
+    question: {
         type: String,
         required: true,
         unique: true,
