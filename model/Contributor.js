@@ -22,6 +22,6 @@ const ContributorSchema = new Schema({
 });
 
 const Contributor = mongoose.model('contributor', ContributorSchema);
-Contributor.createIndexes();
+// Contributor.createIndexes();
 module.exports = Contributor
 
